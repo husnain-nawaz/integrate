@@ -1,0 +1,408 @@
+{% extends 'project/base.html' %}
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'project/css/single_product.css' %}">
+    {% endblock %}
+
+
+    <title>Single product Template</title>
+</head>
+<body>
+
+
+{% block content %}
+
+
+
+
+
+
+    <!-- grid -->
+    <div class="container mt-sm-5 mt-4">
+        <div class="row">
+            <div class="col-md-6 p-0">
+                <div class="main-image">
+
+                    <!--  code -->
+                    <div class="container">
+                        <div class="mySlides">
+                            <img class="main-image" src="{{ single_var.post_image.url }}" style="width:100%">
+                        </div>
+
+
+
+                        <div class="mySlides">
+                            <img src="{{ single_var.post_image.url }}" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="{{ single_var.post_image.url }}" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="{{ single_var.post_image.url }}" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="{{ single_var.post_image.url }}" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="{{ single_var.post_image.url }}" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="{{ single_var.post_image.url }}" style="width:100%"
+                                     onclick="currentSlide(1)" alt="The Woods">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="{{ single_var.post_image.url }}" style="width:100%"
+                                     onclick="currentSlide(2)" alt="Cinque Terre">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="{{ single_var.post_image.url }}" style="width:100%"
+                                     onclick="currentSlide(3)" alt="Mountains and fjords">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="{{ single_var.post_image.url }}" style="width:100%"
+                                     onclick="currentSlide(4)" alt="Northern Lights">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="{{ single_var.post_image.url }}" style="width:100%"
+                                     onclick="currentSlide(5)" alt="Nature and sunrise">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="{{ single_var.post_image.url }}" style="width:100%"
+                                     onclick="currentSlide(6)" alt="Snowy Mountains">
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("demo");
+                            if (n > slides.length) {
+                                slideIndex = 1
+                            }
+                            if (n < 1) {
+                                slideIndex = slides.length
+                            }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                            captionText.innerHTML = dots[slideIndex - 1].alt;
+                        }
+                    </script>
+
+                </div>
+            </div>
+            <div class="col-md-6 pl-lg-5">
+                <div class="container-md">
+                    <h3 class="h3">{{ single_var.post_title }}</h3>
+                    <p class="p-brand-name">DEVOGUE STORE</p>
+                    <div class="">
+                        <p class="inline-p">Rs.2,700.00</p>
+                        <p class="p-tag1">Rs.2,700.00
+                        </p>
+                        <kbd>Sale</kbd>
+                        <p class="p-link"><a class="link-shiping-product" href="#">Shipping</a> calculated at checkout.
+                        </p>
+                    </div>
+                    <p class="mt-4 mt-sm-5 mb-2 p-size">size</p>
+
+                </div>
+                <form>
+                    <div class="form-group">
+                        <div class="container row p-0 m-0">
+
+                            <select class="form-control option-select col-lg-6" id="exampleFormControlSelect1">
+                                <option>US/PAK 12</option>
+                                <option>US/PAK 11</option>
+                                <option>US/PAK 10</option>
+                                <option>US/PAK 9</option>
+                                <option>US/PAK 8</option>
+                                <option>US/PAK 7</option>
+                                <option>US/PAK 6</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <!-- button -->
+                <div class="mb-5">
+                    <a href="#" class="btn btn-primary rounded-0 see-chart" role="button" aria-pressed="true">SEE SIZE
+                        CHART</a>
+                    <a href="#" class="btn btn-primary rounded-0 see-chart see-chart2" role="button"
+                       aria-pressed="true">ADD TO CART</a>
+                    <a href="#" class="btn btn-primary rounded-0 see-chart see-chart3" role="button"
+                       aria-pressed="true">BUY IT NOW</a>
+                </div>
+                <!-- text information -->
+                <div class="pt-xl-4">
+<pre>
+{{ single_var.post_main }}
+</pre>
+                </div>
+
+                <!-- review tab -->
+
+                <div class="review-div">
+                    <p class="p-review">CUSTOMER REVIEWS</p>
+
+                    <div class="">
+                        <div class="row">
+                            <div class="col-12">
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5"/>
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4"/>
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3"/>
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2"/>
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1"/>
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                    <div class="col based-review-col-div">
+                                        <div class="mt-sm-2">
+                                            <p class="p2-review">Based on 1 review</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <div>
+                                    <div class="button-collapse-div-review">
+                                        <a class="btn write-review-button" data-toggle="collapse"
+                                           href="#collapseExample" role="button" aria-expanded="false"
+                                           aria-controls="collapseExample">
+                                            Write a review
+                                        </a>
+                                    </div>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body">
+                                            <!-- card body -->
+                                            <p class="font-weight-bold review-inside-p1">Write a review</p>
+                                            <!-- form inside card -->
+                                            <form>
+                                                <div class="form-group">
+                                                    <label class="label-form-review"
+                                                           for="formGroupExampleInput">Name</label>
+                                                    <input type="text" class="form-control input-form-review"
+                                                           id="formGroupExampleInput" placeholder="Example input">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="label-form-review" for="exampleFormControlInput1">Email</label>
+                                                    <input type="email" class="form-control input-form-review"
+                                                           id="exampleFormControlInput1"
+                                                           placeholder="johndoe@example.com">
+                                                </div>
+                                                <!-- stars ranking -->
+                                                <div class="form-group">
+                                                    <label class="label-form-review" for="exampleFormControlInput1">Rating</label>
+                                                    <br>
+                                                    <div class="rate">
+                                                        <input type="radio" id="star5" name="rate" value="5"/>
+                                                        <label for="star5" title="text">5 stars</label>
+                                                        <input type="radio" id="star4" name="rate" value="4"/>
+                                                        <label for="star4" title="text">4 stars</label>
+                                                        <input type="radio" id="star3" name="rate" value="3"/>
+                                                        <label for="star3" title="text">3 stars</label>
+                                                        <input type="radio" id="star2" name="rate" value="2"/>
+                                                        <label for="star2" title="text">2 stars</label>
+                                                        <input type="radio" id="star1" name="rate" value="1"/>
+                                                        <label for="star1" title="text">1 star</label>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <br class="d-sm-none">
+                                                <div class="form-group">
+                                                    <label class="label-form-review" for="exampleFormControlInput1">Review
+                                                        Title</label>
+                                                    <input type="email" class="form-control input-form-review"
+                                                           id="exampleFormControlInput1"
+                                                           placeholder="Give your review a title">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="label-form-review" for="exampleFormControlTextarea1">Body
+                                                        of Review (1500)</label>
+                                                    <textarea class="form-control input-form-review"
+                                                              id="exampleFormControlTextarea1" rows="7"></textarea>
+                                                </div>
+                                                <div class="submit-review-div">
+                                                    <button type="submit" class="btn btn-primary button-submit-review">
+                                                        Submit
+                                                    </button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5"/>
+                                    <label for="star5" title="text">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4"/>
+                                    <label for="star4" title="text">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3"/>
+                                    <label for="star3" title="text">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2"/>
+                                    <label for="star2" title="text">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1"/>
+                                    <label for="star1" title="text">1 star</label>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="ml-2">
+                                    <p class="title-text-review">correction</p>
+                                    <p class="name-text-review">Sajid Basheer <span class="span-on mx-1">on</span> Dec
+                                        10, 2020</p>
+                                    <pre class="message-text-review">
+Please read above where it’s written “Thank you so much for your CORPORATION’.It should be cooperation not corporation.
+
+Now question how much you guys charge to ship US.
+          </pre>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- title -->
+    <div class="div-title-review mt-5 mb-5">
+        <p class="div-title-p-review">YOU MAY ALSO LIKE</p>
+    </div>
+
+    <!-- pics container -->
+
+    <div class="container mt-4 mb-5">
+        <div class="container">
+            <div class="row mx-auto">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-3 collll">
+                    <a href="#!" class="text-dark link-decoration"><img src="images/shoes/boot2.png"
+                                                                        class="img-fluid with_1 mx-auto"
+                                                                        alt="Responsive image">
+                        <p class="h6 text-dark text-left font-weight-bold lines-underline"><span
+                                class="change-decoration">Lorem Ipsum has been the industry's standard dummy text ever Lorem Ipsum htext ever </span>
+                        </p>
+                        <p class="p-price-shoes p-0">Rs.6,500.00 <span class="span-price-shoes">Rs.2,999.00</span></p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-3 collll">
+                    <a href="#!" class="text-dark link-decoration"><img src="images/men2.png" class="img-fluid with_1"
+                                                                        alt="Responsive image">
+                        <p class="h6 text-dark text-left font-weight-bold lines-underline"><span
+                                class="change-decoration">Lorem Ipsum has been the indust dummy text ever Lorem Ipsum htext ever </span>
+                        </p>
+                        <p class="p-price-shoes p-0">Rs.6,500.00 <span class="span-price-shoes">Rs.2,999.00</span></p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-3 collll">
+                    <a href="#!" class="text-dark link-decoration"><img src="images/shoes/joger6.png"
+                                                                        class="img-fluid with_1" alt="Responsive image">
+                        <p class="h6 text-dark text-left font-weight-bold lines-underline"><span
+                                class="change-decoration">Lorem Ipsum has been the industry's standard dummy text ever Lorem Ipsum htext ever </span>
+                        </p>
+                        <p class="p-price-shoes p-0">Rs.6,500.00 <span class="span-price-shoes">Rs.2,999.00</span></p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-3 collll">
+                    <a href="#!" class="text-dark link-decoration"><img src="images/sho1.png"
+                                                                        class="img-fluid with_1  mx-auto"
+                                                                        alt="Responsive image">
+                        <p class="h6 text-dark text-left font-weight-bold lines-underline"><span
+                                class="change-decoration">Lorem Ipsum has bstandard dummy text ever Lorem Ipsum htext ever </span>
+                        </p>
+                        <p class="p-price-shoes p-0">Rs.6,500.00 <span class="span-price-shoes">Rs.2,999.00</span></p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock content %}
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+

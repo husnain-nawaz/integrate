@@ -1,0 +1,796 @@
+
+/* upper text */
+.upper-text{
+    font-weight: 600;
+  }
+  @media only screen and (max-width: 476px) {
+    .upper-text{
+      font-size: small;
+    }
+  }
+  
+
+
+/* Navbar */
+.dropdown-menu{
+    background-color: rgb(192, 192, 192);
+  }
+  .dropdown-item{
+    color: white;
+  }
+  
+  /* navbar styling */
+   /* navbar ordering in 992px small */
+  
+   @media screen and (max-width: 992px) {
+    .navbar-nav {
+        background-color: rgb(243, 243, 243);
+    }
+  }
+  
+  /* navbar icons styling */
+  
+  .icons-style{
+    color: rgb(82, 82, 82) !important;
+  }
+  .icons-style:hover{
+    color: rgb(0, 0, 0) !important;
+  }
+  
+  /* dropdown */
+  
+  .dropdown-menu{
+    background-color: rgb(80, 80, 80) !important;
+    border-radius: 0%;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .dropdown-item{
+    color: rgb(255, 255, 255);
+    font-size: 95%;
+    line-height: 130%;
+    border-bottom: 1px solid currentColor;
+    line-height: 1.9 !important;
+    /* margin-bottom: -6px; */
+  }
+  
+  .dropdown-item:hover{
+    background-color: white;
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dropdown-menu{
+      background-color: transparent !important;
+      border-radius: 0%;
+      border: none;
+    }
+    .dropdown-item{
+      color: rgb(255, 255, 255);
+      line-height: 120%;
+      font-size: 90%;
+      background-color: rgb(80, 80, 80);
+      border-bottom: 1px solid currentColor;
+      line-height: 1.8;
+  }
+    .border-bottom-style{
+      font-size: 95% !important;
+      color: black;
+    }
+  }
+  
+  .border-bottom-style{
+    font-size: 106%;
+    color: black;
+  }
+  
+  .border-bottom-style:hover {
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .diplay-small-screens {
+      display: none;
+    }
+    .navbar-nav{
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+  
+  /* navbar icon small screens */
+  .fa-bars{
+    color: black;
+  }
+  
+  /* dropdown icon */
+  .dropdown-toggle::after{
+    display: none !important;
+}
+  
+  .fa-arrow-alt-circle-down{
+    color: black;
+}
+  
+  .fa-arrow-alt-circle-down:hover {
+    border-bottom: 1px solid currentColor !important;
+}
+  
+
+/* header text styling */
+.header-text-policy-style{
+  color: rgb(80, 80, 80);
+  font-size: 220%;
+  font-weight: bold !important;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+/* Footer */
+
+.secondary-color-footer{
+    background-color: rgb(241, 241, 241);
+}
+.collll{
+    text-align: center;
+}
+.font-p-footer{
+    font-size: 105%;
+}
+
+.font-p-footer-text{
+    font-size: 95%;
+    text-align: left !important;
+    display: block !important;
+    text-decoration: underline;
+    display: inline;
+    /* color: rgb(70, 70, 70) !important; */
+}
+.font-p-footer-text1{
+    font-size: 92%;
+    color: rgb(78, 78, 78);
+}
+.thin-text{
+    font-weight: 450 !important;
+}
+.icons-style-2{
+    font-size: 32px;
+    color: rgb(37, 37, 37);
+}
+.icons-style-2:hover{
+    font-size: 36px;
+    color: rgb(87, 86, 86);
+    text-decoration: none;
+}
+.icon-tab-2{
+    text-align: end;
+}
+.copyright-style{
+    text-align: end;
+    font-weight: 350 !important;
+    font-size: small;
+}
+.link-border:hover{
+    border-style: none !important;
+    border-color: black !important;
+}
+.text-of-link{
+    color: rgb(90, 90, 90);
+}
+
+.text-of-link:hover{
+    color: rgb(61, 61, 61);
+}
+/* overflow of footers links  */
+
+.font-p-footer-text{
+    overflow: hidden;
+}
+
+
+
+/* foam */
+
+.form-control{
+    border-radius: 0%;
+    border-color: rgb(148, 148, 148);
+    box-shadow: none !important;
+}
+
+.textupper{
+    color: rgb(121, 121, 121);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.hover-effect-link:hover{
+    text-decoration: none;
+}
+
+/* grid text heading */
+.grid-text-heading{
+  color: rgb(70, 70, 70);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+.grid-text-p{
+  color: rgb(87, 87, 87);
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 576px) {
+  .grid-text-heading{
+    font-size: large;
+  }
+}
+
+/* best button styling */
+.btn-xs{
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(59, 59, 87) !important;
+  outline-style: auto;
+  box-shadow: none !important;
+  font-size: smaller;
+}
+.btn-un-form{
+    background-color: transparent !important;
+    color: rgb(129, 129, 129);
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+}
+.btn-un-form:hover{
+    color:rgb(87, 87, 87);
+}
+
+/* single product page */
+
+/* iamges product */
+.main-image{
+    text-align: center;
+}
+
+/* ------------------------------------------------------------- */
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 28%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    color: rgb(206, 206, 206) !important;
+    border-radius: 3px 0 0 3px;
+    font-size: xx-large;
+    padding-right: 30px;
+
+  }
+  .prev {
+    left: 0;
+    color: rgb(206, 206, 206) !important;
+    padding-left: 30px;
+    font-size: xx-large;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 5px 8px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.8;
+    padding: 8px;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+/* text product page col 2 */
+h3{
+  font-size: 215% !important;
+  font-weight: 700 !important;
+  color: rgb(58, 58, 58);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 576px) {
+  h3{
+    padding-top: 15px;
+    font-size: 180% !important;  
+  }
+  .p-brand-name{
+    font-size: medium !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  h3{
+    font-size: 135% !important;  
+  }
+}
+.p-brand-name{
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(102, 102, 102);
+}
+
+/* ----------- */
+.p-tag1{
+  display: inline;
+  padding-left: 40px;
+  font-size: 130% !important;
+  font-weight: 700;
+}
+kbd{
+  display: inline;
+  margin-left: 15px;
+  background-color: #557b97;
+  padding: 3px 10px 3px 10px;
+  text-decoration-line: none !important;
+}
+.inline-p{
+  font-size: 110% !important;
+  font-weight: 800;
+  display: inline;
+  color: #557b97;
+}
+.p-tag1{
+  font-size: 110% !important;
+  font-weight: 800;
+  display: inline;
+  padding-left: 10px;
+  color:#69727b;
+  -webkit-text-decoration-line: line-through; /* Safari */
+  text-decoration-line: line-through;
+  text-decoration-thickness: 2px;
+}
+.main-image{
+  width: 90%;
+}
+@media screen and (max-width: 769px) {
+  .main-image{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 245px) {
+  .p-tag1{
+    display: inline;
+    padding-left: 0px;
+  }
+  kbd{
+    margin-left: 0px !important;
+  }
+}
+@media screen and (max-width: 319px) {
+  kbd{
+    margin-left: 0px !important;
+  }
+}
+
+.link-shiping-product{
+  color: #464646;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+}
+.link-shiping-product:hover{
+  color: #2b2b2b;
+  text-decoration: none;
+}
+.p-link{
+  margin-top: 10px;
+}
+.p-size{
+  font-size: 125%;
+  color: rgb(77, 77, 77);
+}
+/* buttons product */
+.see-chart{
+  font-size: medium;
+  padding: 7px 20px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #557b97;
+  border: none;
+  box-shadow: none !important;
+  margin-bottom: 15px;
+}
+.see-chart:hover{
+  background-color: #396280;
+
+}
+.option-select{
+  padding: .5rem !important;
+}
+@media screen and (max-width: 769px) {
+  .see-chart{
+    display: block;
+    width: 100%;
+  }
+}
+.see-chart2{
+  display: block;
+  width: 100%;
+  background-color: transparent !important;
+  color: #396280;
+  border: 1px solid currentColor;
+}
+.see-chart2:hover{
+  color: #284d68;
+  border-color: #284d68;
+}
+.see-chart3{
+  display: block;
+  width: 100%;
+}
+
+/* large paragraph div */
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  color: rgb(59, 59, 59);
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* review div */
+.review-div{
+  border: 1px solid rgb(204, 204, 204);
+  padding: 14px;
+}
+.p-review{
+  font-size: 145%;
+  font-weight: 700;
+  margin: 10px 10px 0px 10px;
+}
+.rate{
+  margin: 0px 10px;
+}
+.p2-review{
+  color: #494949;
+  display: inline;
+}
+@media screen and (max-width: 769px) {
+  .p-review{
+    font-size: 135%;
+  }
+  .button-div-review{
+    text-align: center !important;
+  }
+}
+
+.button-collapse-div-review{
+  text-align: center;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+.write-review-button{
+  box-shadow: none !important;
+  color: #424242;
+  padding: 0%;
+  font-size: large;
+  margin-bottom: 15px;
+}
+.rate{
+  margin: 0px 0px 0px 7px !important;
+}
+label{
+  margin-bottom: 0%;
+}
+
+@media screen and (max-width: 335px) {
+  .rate:not(:checked) > label {
+    font-size:19px !important;
+    padding-top: 15px;
+  }
+  .based-review-col-div{
+    padding-top: 15px;
+  }
+}
+
+.based-review-col-div{
+  vertical-align: text-bottom !important;
+  padding-top: 3px;
+  padding-left: 0%;
+}
+/* card body */
+.card-body{
+  border: none;
+  padding: 0%;
+  margin-top: 20px;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  border-radius: 0%;
+}
+/* review inside */
+.review-inside-p1{
+  font-size: medium;
+  color: #575757;
+}
+/* for review */
+.label-form-review{
+  font-size: 85%;
+  margin-bottom: 5px !important;
+  color: #464646;
+}
+.input-form-review:focus{
+  border: 1px solid rgb(104, 104, 104);
+}
+.submit-review-div{
+  float: right;
+}
+.button-submit-review{
+  padding: 7px 40px 7px 40px;
+  border-radius: 0%;
+  font-size: medium;
+  font-weight: 500;
+  background-color: #406b8a;
+  border: none;
+  margin-bottom: 25px;
+  box-shadow: none !important;
+}
+.button-submit-review:hover{
+  background-color: #234863;
+}
+
+
+/* reviwed text */
+.title-text-review{
+  font-size: 107%;
+  font-weight: 500;
+  color: #3d3d3d;
+}
+.name-text-review{
+  font-size: small;
+  font-weight: 700;
+  color: #7c7c7c;
+  font-style: italic;
+}
+.span-on{
+  font-weight: 400 !important;
+  color: #505050 !important;
+}
+.message-text-review{
+  font-size: small;
+  color: #747474;
+}
+
+
+/* link decoration of pics */
+
+.main-with-1{
+    width: 500px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.with_1{
+    width: 250px;
+    height: auto;
+}
+.with_1:hover{
+    opacity: 0.8;
+}
+
+.collll{
+    text-align: center;
+}
+
+/* link decoration of pics */
+
+.link-decoration:hover{
+    text-decoration: none !important;
+}
+.change-decoration:hover{
+    border-bottom: 1px solid currentColor !important;
+    padding-bottom: 4px !important;
+}
+.change-decoration{
+    font-size: 106% !important;
+    line-height: 1.5 !important;
+}
+
+
+/* overlay on catagories pics */
+
+.content-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 175%;
+}
+
+.content {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    opacity: 0.65;
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .content-title {
+      font-size: 120%;
+    }
+  }
+
+.div-title-review{
+  text-align: center;
+}
+.div-title-p-review{
+  font-size: larger;
+  font-weight: 700;
+  color: #494949;
+  letter-spacing: 1.5px;
+}
+@media only screen and (max-width: 500px) {
+  .div-title-p-review{
+    font-size: medium;
+  }
+}
+
+/* --------------------- */
+/* pics shoes prices */
+.p-price-shoes{
+  text-align: left;
+  font-weight: 700;
+  color: #557b97;
+}
+.span-price-shoes{
+  color: #69727b;
+  -webkit-text-decoration-line: line-through; /* Safari */
+  text-decoration-line: line-through;
+  text-decoration-thickness: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* star input rating */
+.rate {
+  float: left;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:25px;
+  color:rgb(99, 99, 99);
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #494949;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #4b4b4b;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #161616;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
